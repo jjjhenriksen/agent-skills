@@ -12,13 +12,6 @@ Agent skills for the OpenClaw ecosystem — evidence-tiered review, strategic re
 | [quality-review](quality-review/) | Evidence-first structured review with source-tiered claims — for code, notes, and research |
 | [citation-fixer](citation-fixer/) | Audit and fix provenance in knowledge base notes — every fact gets a source |
 
-## Publishing
-
-```bash
-cd <skill-dir>
-clawhub skill publish . --slug <slug> --name "<Display Name>" --tags "<tags>"
-```
-
 ## Author
 
 Published by [jjjhenriksen](https://github.com/jjjhenriksen).
