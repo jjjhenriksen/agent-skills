@@ -1,0 +1,4 @@
+# ClawHub publishing artifacts
+node_modules/
+.DS_Store
+*.log
