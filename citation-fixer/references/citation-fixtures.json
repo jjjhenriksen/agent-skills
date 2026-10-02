@@ -1,0 +1,173 @@
+{
+  "scope": "Fictional syntax fixtures; existence and source support require separate review.",
+  "cases": [
+    {
+      "id": "user-valid",
+      "type": "user",
+      "citation": "[Source: user, private planning chat, 2026-10-02]",
+      "valid_syntax": true
+    },
+    {
+      "id": "user-no-context",
+      "type": "user",
+      "citation": "[Source: user, , 2026-10-02]",
+      "valid_syntax": false
+    },
+    {
+      "id": "user-bad-date",
+      "type": "user",
+      "citation": "[Source: user, planning chat, 2026-02-30]",
+      "valid_syntax": false
+    },
+    {
+      "id": "web-valid",
+      "type": "web",
+      "citation": "[Source: web, Example Journal, https://example.org/article, 2026-10-02]",
+      "valid_syntax": true
+    },
+    {
+      "id": "web-no-url",
+      "type": "web",
+      "citation": "[Source: web, Example Journal, , 2026-10-02]",
+      "valid_syntax": false
+    },
+    {
+      "id": "web-bad-url",
+      "type": "web",
+      "citation": "[Source: web, Example Journal, file:///private/note, 2026-10-02]",
+      "valid_syntax": false
+    },
+    {
+      "id": "web-credential-url",
+      "type": "web",
+      "citation": "[Source: web, Example Journal, https://name:secret@example.org/article, 2026-10-02]",
+      "valid_syntax": false
+    },
+    {
+      "id": "paper-valid",
+      "type": "paper",
+      "citation": "[Source: paper, A. Example, \"Attention, Together\", 2024]",
+      "valid_syntax": true
+    },
+    {
+      "id": "paper-no-author",
+      "type": "paper",
+      "citation": "[Source: paper, , \"Attention Together\", 2024]",
+      "valid_syntax": false
+    },
+    {
+      "id": "paper-not-year",
+      "type": "paper",
+      "citation": "[Source: paper, A. Example, \"Attention Together\", 2024-10-02]",
+      "valid_syntax": false
+    },
+    {
+      "id": "conversation-valid",
+      "type": "conversation",
+      "citation": "[Source: conversation, Fictional participant, rehearsal planning, 2026-10-02]",
+      "valid_syntax": true
+    },
+    {
+      "id": "conversation-no-topic",
+      "type": "conversation",
+      "citation": "[Source: conversation, Fictional participant, , 2026-10-02]",
+      "valid_syntax": false
+    },
+    {
+      "id": "conversation-no-date",
+      "type": "conversation",
+      "citation": "[Source: conversation, Fictional participant, rehearsal planning]",
+      "valid_syntax": false
+    },
+    {
+      "id": "synthesis-valid",
+      "type": "synthesis",
+      "citation": "[Source: synthesis, compiled from sources/attention; sources/rehearsal]",
+      "valid_syntax": true
+    },
+    {
+      "id": "synthesis-one-source",
+      "type": "synthesis",
+      "citation": "[Source: synthesis, compiled from sources/attention]",
+      "valid_syntax": true
+    },
+    {
+      "id": "synthesis-no-lineage",
+      "type": "synthesis",
+      "citation": "[Source: synthesis, compiled from ]",
+      "valid_syntax": false
+    },
+    {
+      "id": "synthesis-empty-entry",
+      "type": "synthesis",
+      "citation": "[Source: synthesis, compiled from sources/attention; ; sources/rehearsal]",
+      "valid_syntax": false
+    },
+    {
+      "id": "ai-valid",
+      "type": "ai",
+      "citation": "[Source: ai, fictional-model-v1, 2026-10-02]",
+      "valid_syntax": true
+    },
+    {
+      "id": "ai-no-model",
+      "type": "ai",
+      "citation": "[Source: ai, , 2026-10-02]",
+      "valid_syntax": false
+    },
+    {
+      "id": "ai-no-date",
+      "type": "ai",
+      "citation": "[Source: ai, fictional-model-v1]",
+      "valid_syntax": false
+    },
+    {
+      "id": "legacy-paper",
+      "type": "legacy",
+      "citation": "[Source: A. Example, \"Attention Together\", 2024]",
+      "valid_syntax": false
+    },
+    {
+      "id": "legacy-synthesis",
+      "type": "legacy",
+      "citation": "[Source: compiled from sources/attention; sources/rehearsal]",
+      "valid_syntax": false
+    },
+    {
+      "id": "legacy-ai",
+      "type": "legacy",
+      "citation": "[Source: fictional-model-v1, 2026-10-02]",
+      "valid_syntax": false
+    },
+    {
+      "id": "valid-leap-day",
+      "type": "user",
+      "citation": "[Source: user, fictional chat, 2024-02-29]",
+      "valid_syntax": true
+    },
+    {
+      "id": "invalid-leap-day",
+      "type": "user",
+      "citation": "[Source: user, fictional chat, 2025-02-29]",
+      "valid_syntax": false
+    },
+    {
+      "id": "valid-csv-quotes",
+      "type": "paper",
+      "citation": "[Source: paper, \"A. Example, B. Example\", \"The \"\"Shared\"\" Rehearsal\", 2024]",
+      "valid_syntax": true
+    },
+    {
+      "id": "unclosed-title",
+      "type": "paper",
+      "citation": "[Source: paper, A. Example, \"Unclosed title, 2024]",
+      "valid_syntax": false
+    },
+    {
+      "id": "unclosed-citation",
+      "type": "user",
+      "citation": "[Source: user, fictional chat, 2026-10-02",
+      "valid_syntax": false
+    }
+  ]
+}
