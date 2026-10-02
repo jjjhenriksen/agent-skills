@@ -7,7 +7,7 @@ Agent skills for the OpenClaw ecosystem — evidence-tiered review, strategic re
 | Skill | Description |
 |-------|-------------|
 | [reflection-weaver](reflection-weaver/) | Preserve reflections as voice-bearing writing while extracting stable concepts and weaving backlinks |
-| [signal-detector](signal-detector/) | Always-on ambient capture of original thinking and entity mentions from conversation |
+| [signal-detector](signal-detector/) | Scoped, authorized capture of original thinking and notable entity facts |
 | [strategic-reading](strategic-reading/) | Read a source through the lens of a specific problem — applied playbook, not summary |
 | [quality-review](quality-review/) | Evidence-first structured review with source-tiered claims — for code, notes, and research |
 | [citation-fixer](citation-fixer/) | Audit and fix provenance in knowledge base notes — every fact gets a source |
