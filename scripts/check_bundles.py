@@ -9,6 +9,7 @@ import sys
 from urllib.parse import unquote, urlsplit
 
 import yaml
+from markdown_it import MarkdownIt
 
 
 def check(root: Path) -> list[str]:
@@ -34,7 +35,11 @@ def check(root: Path) -> list[str]:
         except (ValueError, yaml.YAMLError) as error:
             errors.append(f"{skill.relative_to(root)}: {error}")
         for document in sorted(skill.parent.rglob("*.md")):
-            for target in re.findall(r"\[[^\]\n]+\]\(([^)\s]+)\)", document.read_text(encoding="utf-8")):
+            tokens = MarkdownIt().parse(document.read_text(encoding="utf-8"))
+            for child in (child for token in tokens for child in (token.children or [])):
+                if child.type != "link_open":
+                    continue
+                target = child.attrGet("href")
                 url = urlsplit(target)
                 if url.scheme or url.netloc or not url.path:
                     continue
