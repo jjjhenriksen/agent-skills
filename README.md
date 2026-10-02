@@ -70,7 +70,7 @@ the refreshed skill list; a Gateway restart is unnecessary.
 Local bundle checks and isolated copy/collision tests use Python 3.10+:
 
 ```sh
-python3 -m pip install PyYAML==6.0.3
+python3 -m pip install PyYAML==6.0.3 markdown-it-py==3.0.0
 python3 scripts/check_bundles.py
 python3 -m unittest discover -s tests -v
 ```
