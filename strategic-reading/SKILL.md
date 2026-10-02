@@ -14,8 +14,34 @@ Read a book, article, paper, transcript, or case study through the lens of a spe
 
 - Requires TWO inputs: source text AND a specific strategic problem or question
 - Output is an applied analysis, not a general summary
-- Every recommendation maps back to a specific passage in the source
+- Every recommendation has its own passage locator, source claim, and separately labeled applied inference
 - Never runs on a source without a clear "what problem does this help with?"
+
+## Evidence for each recommendation
+
+Give every proposed tactic/action a stable ID and its own evidence record:
+
+1. **Passage locator:** identify the source edition/revision or saved snapshot
+   and the exact page/section/paragraph, timestamp, or anchored text range.
+   A title, homepage, or quote shared across a whole section is insufficient.
+   If the text has no locators, preserve an authorized excerpt and assign
+   paragraph IDs in that excerpt; label them as assigned IDs, not original
+   page numbers. Never invent a page or imply an unseen passage was read.
+2. **Source claim:** quote briefly or faithfully paraphrase what that passage
+   actually establishes, including its scope and qualifications.
+3. **Applied inference:** state the proposed action for the user's problem and
+   explain the bridge from the source claim. Label this as your application,
+   not something the source prescribed for the user.
+4. **Assumptions and limits:** identify what must hold for that bridge to work
+   and how the user could check it. Keep an unsupported idea explicitly labeled
+   as a hypothesis outside the source-backed recommendation list.
+
+Repeat the locator/claim/inference record for each recommendation, even if two
+use the same passage. A section-level quote never covers untraced extra tactics.
+Use recommendation IDs in a timing list instead of adding fresh ungrounded
+actions there. Distinguish evidence-backed relevance from a guaranteed result.
+See [traceable-example.md](references/traceable-example.md) for two independently
+traceable recommendations and a fully available fictional source.
 
 ## When to use
 
@@ -34,9 +60,9 @@ Read a book, article, paper, transcript, or case study through the lens of a spe
 
 1. **Identify the strategic problem.** What specific situation or decision is the user working on? Get this explicit before reading the source.
 2. **Read the source.** Extract key frameworks, tactics, observations, and historical patterns.
-3. **Map to the problem.** For each major section: relevance to the user's problem (HIGH / MEDIUM / LOW), one applicable quote, specific mapping.
-4. **Build the playbook.** What can the user do? Organize as short-term (now), medium-term (this month), long-term (this quarter) recommendations.
-5. **Write to knowledge base.** Save under the relevant project or reading directory.
+3. **Map to the problem.** Triage sections for relevance (HIGH / MEDIUM / LOW), with passage locators and accurate source claims. Keep application distinct.
+4. **Build the playbook.** Give each recommendation the evidence record above, then organize its ID by timing.
+5. **Save if authorized.** Write to the explicitly chosen project/reading destination only when the task authorizes it; otherwise return the playbook in the conversation.
 
 ## Output Structure
 
@@ -51,7 +77,7 @@ problem: "{the strategic question}"
 
 # {Source Title} — Applied to {Problem}
 
-> Executive summary: how the source maps to the situation, the key insight, the bottom line.
+> Brief overview: the problem, the relevant source claims, and the proposed application.
 
 ## The Core Parallel
 How the source's central dynamic maps onto the user's situation.
@@ -60,18 +86,21 @@ How the source's central dynamic maps onto the user's situation.
 For each major section of the source:
 - 2-3 sentence summary of what it says
 - Relevance to the problem: HIGH / MEDIUM / LOW
-- One directly applicable quote
+- One directly applicable quote or faithful paraphrase with its passage locator
 
 ## The Playbook
-Organized by the source's framework, mapped to the user's context:
-- Tactics to apply directly
-- Anti-patterns to avoid
-- Timing and sequencing
+Repeat for EACH recommendation, including tactics and proposed avoidances:
+
+### R1 — {proposed action}
+- **Passage locator:** {source identity/revision + precise location}
+- **Source claim:** {what the passage actually says}
+- **Applied inference:** {action + why it may fit this problem}
+- **Assumptions/limits:** {conditions, uncertainty, and a check}
 
 ## Short/Medium/Long-Term Actions
-- **Now:** immediately applicable moves
-- **This month:** medium-term implementation
-- **This quarter:** long-term strategic shifts
+- **Now:** recommendation IDs from the playbook
+- **This month:** recommendation IDs from the playbook
+- **This quarter:** recommendation IDs from the playbook
 
 ## Connections
 Related notes, projects, and concepts this analysis touches.
