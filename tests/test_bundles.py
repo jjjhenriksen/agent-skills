@@ -10,6 +10,19 @@ spec.loader.exec_module(bundles)
 
 
 class BundleTests(unittest.TestCase):
+    def test_frontmatter_delimiters_must_occupy_their_own_line(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            skill = root / "example"
+            skill.mkdir()
+            for description in ['"Use --- to separate sections"', '|\n  Preserve\n  ---\n  within the description']:
+                with self.subTest(description=description):
+                    (skill / "SKILL.md").write_text(
+                        f'---\nname: example\ndescription: {description}\n---\n# Example\n')
+                    self.assertEqual(bundles.check(root), [])
+            (skill / "SKILL.md").write_text('---\nname: example\ndescription: Example\n')
+            self.assertTrue(any("frontmatter" in error for error in bundles.check(root)))
+
     def test_markdown_examples_are_not_packaged_references(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
