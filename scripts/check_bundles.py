@@ -19,11 +19,11 @@ def check(root: Path) -> list[str]:
         return ["No skill bundles found"]
     for skill in skills:
         content = skill.read_text(encoding="utf-8")
-        parts = content.split("---", 2)
+        frontmatter = re.match(r"\A---[ \t]*\r?\n(.*?)^---[ \t]*(?:\r?\n|\Z)", content, re.M | re.S)
         try:
-            if len(parts) != 3 or parts[0].strip():
+            if frontmatter is None:
                 raise ValueError("missing YAML frontmatter")
-            metadata = yaml.safe_load(parts[1])
+            metadata = yaml.safe_load(frontmatter.group(1))
             if not isinstance(metadata, dict):
                 raise ValueError("frontmatter must be a mapping")
             name = metadata.get("name")
