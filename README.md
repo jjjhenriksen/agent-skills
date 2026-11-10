@@ -12,6 +12,22 @@ Agent skills for the OpenClaw ecosystem — evidence-tiered review, strategic re
 | [quality-review](quality-review/) | Evidence-first structured review with source-tiered claims — for code, notes, and research |
 | [citation-fixer](citation-fixer/) | Audit and fix provenance in knowledge base notes — every fact gets a source |
 
+## Hosting and gift skills (review release 0.1.0)
+
+Six independent skills; no agent persona or Christmas appearance plugin required:
+
+| Skill | Job |
+|---|---|
+| [hosting-run-of-show](hosting-run-of-show/) | Hosting timeline, guest brief, day-of run sheet and cleanup |
+| [menu-prep-planner](menu-prep-planner/) | Recipe scaling, shopping quantities and kitchen conflicts |
+| [potluck-signup-coordinator](potluck-signup-coordinator/) | Google Sheets signup design and claim reconciliation; SignUpGenius packets/exports |
+| [gift-season-manager](gift-season-manager/) | Private gift research, budget, order/wrapping/delivery/return follow-through |
+| [event-change-control](event-change-control/) | Changes to headcount, budget, dates, supplies or helpers |
+| [event-reminder-lifecycle](event-reminder-lifecycle/) | Finite reminders, revision/cutoff checks and retirement |
+
+See [research, tests and release boundaries](docs/HOSTING-SKILLS.md).
+The manual installer below still installs the original five-skill knowledge pack only; it has not silently gained these six skills. Each new folder is independently distributable and can be reviewed/copied into a chosen agent's workspace skills directory. Python helpers are optional, offline and standard-library only. ClawHub publication is pending owner review; no live API/browser/Sheets/scheduler adapter is installed by these sources.
+
 ## Manual installation in OpenClaw
 
 Choose the **configured workspace of the intended agent**, not the OpenClaw
