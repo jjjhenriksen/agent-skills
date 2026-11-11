@@ -116,3 +116,11 @@ copying the repository into a Codex root installs the five skills there.
 ## Author
 
 Published by [jjjhenriksen](https://github.com/jjjhenriksen).
+
+## Catalog profile policy
+Keep lowercase routable slugs and readable Title Case display names separate. Publish using explicit names, valid skill categories and focused topics from [the catalog profile manifest](docs/catalog-profiles.json). Template categories are a different vocabulary. Never publish workspace-private skills wholesale.
+
+## Coursework skills
+- [Canvas LMS Navigation](canvas-lms-navigation): institution-neutral authorized LMS reading.
+- [Coursework Research and Drafting](coursework-research-drafting): course-policy and rubric-grounded writing.
+- [Coursework Technical Verification](coursework-technical-verification): reproducible code and numerical checks.

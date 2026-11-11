@@ -1,0 +1,153 @@
+{
+  "policy": "Stable lowercase slugs; readable Title Case display names; concise task descriptions; actual capability categories and topics; no invented runtime dependencies. Publish with explicit --name, --categories and --topics. Do not rename frontmatter identifiers for display.",
+  "skills": [
+    {
+      "slug": "menu-prep-planner",
+      "version": "0.1.0",
+      "owner": "jjjhenriksen",
+      "displayName": "Menu Prep Planner",
+      "category": "lifestyle",
+      "topics": [
+        "planning"
+      ],
+      "targetVersion": "0.1.1"
+    },
+    {
+      "slug": "citation-fixer",
+      "version": "1.0.0",
+      "owner": "jjjhenriksen",
+      "displayName": "Citation Fixer",
+      "category": "knowledge",
+      "topics": [
+        "evidence"
+      ],
+      "targetVersion": "1.0.1"
+    },
+    {
+      "slug": "potluck-signup-coordinator",
+      "version": "0.1.0",
+      "owner": "jjjhenriksen",
+      "displayName": "Potluck Signup Coordinator",
+      "category": "lifestyle",
+      "topics": [
+        "planning"
+      ],
+      "targetVersion": "0.1.1"
+    },
+    {
+      "slug": "gift-season-manager",
+      "version": "0.1.0",
+      "owner": "jjjhenriksen",
+      "displayName": "Gift Season Manager",
+      "category": "lifestyle",
+      "topics": [
+        "planning"
+      ],
+      "targetVersion": "0.1.1"
+    },
+    {
+      "slug": "signal-detector",
+      "version": "1.0.0",
+      "owner": "jjjhenriksen",
+      "displayName": "Signal Detector",
+      "category": "knowledge",
+      "topics": [
+        "evidence"
+      ],
+      "targetVersion": "1.0.1"
+    },
+    {
+      "slug": "reflection-weaver",
+      "version": "1.0.0",
+      "owner": "jjjhenriksen",
+      "displayName": "Reflection Weaver",
+      "category": "knowledge",
+      "topics": [
+        "evidence"
+      ],
+      "targetVersion": "1.0.1"
+    },
+    {
+      "slug": "hosting-run-of-show",
+      "version": "0.1.0",
+      "owner": "jjjhenriksen",
+      "displayName": "Hosting Run Of Show",
+      "category": "lifestyle",
+      "topics": [
+        "planning"
+      ],
+      "targetVersion": "0.1.1"
+    },
+    {
+      "slug": "event-change-control",
+      "version": "0.1.0",
+      "owner": "jjjhenriksen",
+      "displayName": "Event Change Control",
+      "category": "lifestyle",
+      "topics": [
+        "planning"
+      ],
+      "targetVersion": "0.1.1"
+    },
+    {
+      "slug": "quality-review",
+      "version": "1.0.0",
+      "owner": "jjjhenriksen",
+      "displayName": "Quality Review",
+      "category": "knowledge",
+      "topics": [
+        "evidence"
+      ],
+      "targetVersion": "1.0.1"
+    },
+    {
+      "slug": "event-reminder-lifecycle",
+      "version": "0.1.0",
+      "owner": "jjjhenriksen",
+      "displayName": "Event Reminder Lifecycle",
+      "category": "lifestyle",
+      "topics": [
+        "planning"
+      ],
+      "targetVersion": "0.1.1"
+    },
+    {
+      "slug": "strategic-reading",
+      "version": "1.0.0",
+      "owner": "jjjhenriksen",
+      "displayName": "Strategic Reading",
+      "category": "knowledge",
+      "topics": [
+        "evidence"
+      ],
+      "targetVersion": "1.0.1"
+    },
+    {
+      "slug": "canvas-lms-navigation",
+      "displayName": "Canvas LMS Navigation",
+      "targetVersion": "0.1.0",
+      "category": "knowledge",
+      "topics": [
+        "coursework"
+      ]
+    },
+    {
+      "slug": "coursework-research-drafting",
+      "displayName": "Coursework Research and Drafting",
+      "targetVersion": "0.1.0",
+      "category": "knowledge",
+      "topics": [
+        "coursework"
+      ]
+    },
+    {
+      "slug": "coursework-technical-verification",
+      "displayName": "Coursework Technical Verification",
+      "targetVersion": "0.1.0",
+      "category": "development",
+      "topics": [
+        "coursework"
+      ]
+    }
+  ]
+}
