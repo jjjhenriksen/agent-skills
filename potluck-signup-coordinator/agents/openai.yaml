@@ -1,0 +1,3 @@
+interface:
+  display_name: "Potluck Signup Coordinator"
+  short_description: "Design shared potluck and volunteer signups, reconcile claims and detect gaps. Prefer Google Sheets; support SignUpGenius packets/exports and provider-permitted browser workflows without requiring an API."

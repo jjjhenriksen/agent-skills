@@ -1,0 +1,3 @@
+interface:
+  display_name: "Event Reminder Lifecycle"
+  short_description: "Plan, create when authorized, reconcile and retire finite event reminders for RSVPs, shopping, prep, gifts and cleanup. Use for event-bound automation, not indefinite background monitoring."

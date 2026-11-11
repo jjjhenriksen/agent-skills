@@ -1,0 +1,3 @@
+interface:
+  display_name: "Citation Fixer"
+  short_description: "Audit and fix provenance in knowledge base notes using type-specific source fields. Flag unsupported claims without inventing their provenance."

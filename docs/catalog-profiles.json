@@ -1,5 +1,5 @@
 {
-  "policy": "Stable lowercase slugs; readable Title Case display names; concise task descriptions; actual capability categories and topics; no invented runtime dependencies. Publish with explicit --name, --categories and --topics. Do not rename frontmatter identifiers for display.",
+  "policy": "Stable lowercase slugs; readable Title Case display names; concise task descriptions; actual capability categories and topics; no invented runtime dependencies. Publish with explicit --name, --categories and --topics. Do not rename frontmatter identifiers for display. Include agents/openai.yaml interface.display_name and short_description in every skill archive so presentation survives release finalization.",
   "skills": [
     {
       "slug": "menu-prep-planner",
