@@ -116,3 +116,7 @@ copying the repository into a Codex root installs the five skills there.
 ## Author
 
 Published by [jjjhenriksen](https://github.com/jjjhenriksen).
+
+## Writing skills
+
+- [Churchill Brevity](churchill-brevity/): clear reports and decision briefs adapted from the 1940 memo. Preserves material caveats and voice; includes source provenance but no redistributed scan. Release version: 0.1.0.
